@@ -1,0 +1,8 @@
+go 1.21.1
+
+use (
+	./colors
+	./getPic
+	./imgColors
+    ./imgText
+)
