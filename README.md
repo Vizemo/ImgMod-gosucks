@@ -2,7 +2,7 @@
 ### Victor Marchesi
 ### Description:
 
-This project is going to allow you to utilize the packaging strengths of Go, and make your own libs that can be used anywhere just by running the go get ... command. I want you to create four packages in one module or four different modules. I'm ok with both options. However, one or three will be placed in your github account (not in your course repo).
+- This project is going to allow you to utilize the packaging strengths of Go, and make your own libs that can be used anywhere just by running the go get ... command. I want you to create four packages in one module or four different modules. I'm ok with both options. However, one or three will be placed in your github account (not in your course repo).
 
 
 ### Files
