@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"image"
-	"image/png" // import this package to decode PNGs
+	//"image/png" // import this package to decode PNGs
 	"os"
 )
 

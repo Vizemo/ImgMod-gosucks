@@ -11,10 +11,10 @@
 
 |    #    | Files    | Description                      |
 | :---: | -------- | -------------------------------- |
-|    1    | [Colors](./Colors) | P03 goLang imgMod colors package folder |
-|    2    | [getPic](./getPic) | P03 goLang imgMod getPic package folder |
-|    3    | [Grayscale](./Grayscale) | P03 goLang imgMod Grayscale package folder |
-|    4    | [Text](./Text) | P03 goLang imgMod Text package folder |
+|    1    | [Colors](Colors) | P03 goLang imgMod colors package folder |
+|    2    | [getPic](getPic) | P03 goLang imgMod getPic package folder |
+|    3    | [Grayscale](Grayscale) | P03 goLang imgMod Grayscale package folder |
+|    4    | [Text](Text) | P03 goLang imgMod Text package folder |
 
 
 ### Instructions
