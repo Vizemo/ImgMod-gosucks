@@ -1,3 +1,3 @@
-module github.com/Vizemo/ImgMod/Colors
+module Colors
 
 go 1.21.1

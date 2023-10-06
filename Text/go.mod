@@ -1,4 +1,4 @@
-module github.com/Vizemo/ImgMod/Text
+module Text
 
 go 1.21.1
 

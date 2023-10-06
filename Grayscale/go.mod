@@ -1,3 +1,3 @@
-module github.com/Vizemo/ImgMod/GrayScale
+module GrayScale
 
 go 1.21.1
