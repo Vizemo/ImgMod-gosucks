@@ -1,8 +1,9 @@
 go 1.21.1
 
 use (
+	.
 	./Colors
-	./getPic
 	./Grayscale
-    ./Text
+	./Text
+	./getPic
 )
