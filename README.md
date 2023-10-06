@@ -11,10 +11,12 @@
 
 |    #    | Files    | Description                      |
 | :---: | -------- | -------------------------------- |
-|    1    | [Colors](Colors) | P03 goLang imgMod colors package folder |
-|    2    | [getPic](getPic) | P03 goLang imgMod getPic package folder |
-|    3    | [Grayscale](Grayscale) | P03 goLang imgMod Grayscale package folder |
-|    4    | [Text](Text) | P03 goLang imgMod Text package folder |
+|    1    | [Colors](./Colors/) | P03 goLang imgMod colors package folder |
+|    2    | [getPic](./getPic) | P03 goLang imgMod getPic package folder |
+|    3    | [Grayscale](./Grayscale) | P03 goLang imgMod Grayscale package folder |
+|    4    | [go.mod](./go.mod) | P03 goLang imgMod go.mod specifies how to package the modules |
+|    5    | [go.work](./go.work) | P03 goLang imgMod go.work which tells the compiler where to find where the packages are located |
+|    6    | [go.work.sum](./go.work.sum) | P03 goLang imgMod go.work.sum where the dependencies for the code is stored |
 
 
 ### Instructions
