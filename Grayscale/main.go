@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func main() {
+func GrayScale() {
 	reader, err := os.Open("image.png")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)

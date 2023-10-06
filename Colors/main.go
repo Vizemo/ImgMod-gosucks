@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func main() {
+func Colors() {
 	reader, err := os.Open("image.png")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
