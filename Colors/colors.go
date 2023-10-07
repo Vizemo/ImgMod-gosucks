@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// test
 func GetColor() {
 	reader, err := os.Open("downloadedImage.png")
 	if err != nil {

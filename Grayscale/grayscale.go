@@ -8,6 +8,7 @@ import (
 	"os"
 )
 
+// test
 func Grayscale() {
 	// Open the original image
 	reader, err := os.Open("downloadedImage.png")

@@ -9,6 +9,7 @@ import (
 	"golang.org/x/image/font/gofont/goregular"
 )
 
+// test
 func ColorText() {
 	const W = 500
 	const H = 300
