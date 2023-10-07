@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// test
 func GetPicture() {
 	// URL of the image you want to download
 	imageUrl := "https://s3e8p5g8.rocketcdn.me/wp-content/uploads/2020/11/midwestern-state-university2.jpg"
