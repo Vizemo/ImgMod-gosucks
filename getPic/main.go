@@ -1,4 +1,4 @@
-package main
+package getPic
 
 import (
 	"fmt"
@@ -26,7 +26,7 @@ func GetPicture() {
 	}
 
 	// Create a new file to save the image
-	outputFile, err := os.Create("downloaded_image.jpg")
+	outputFile, err := os.Create("downloadedImage.jpg")
 	if err != nil {
 		fmt.Println("Error creating the file:", err)
 		return

@@ -1,14 +1,16 @@
-package main
+package Colors
 
 import (
 	"fmt"
 	"image"
-	//"image/png" // import this package to decode PNGs
+	_ "image/jpeg"
+	_ "image/png"
 	"os"
 )
 
-func Colors() {
-	reader, err := os.Open("image.png")
+func GetColors() {
+
+	reader, err := os.Open("downloadedImage.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
@@ -23,6 +25,14 @@ func Colors() {
 
 	bounds := img.Bounds()
 	width, height := bounds.Max.X, bounds.Max.Y
+
+	// create output file that stores the pixel colors
+	file, errs := os.Create("colorsPixNums.txt")
+	if errs != nil {
+		fmt.Println("Could not create file", errs)
+		return
+	}
+	defer file.Close()
 
 	for y := 0; y < height; y++ {
 		for x := 0; x < width; x++ {

@@ -1,6 +1,7 @@
-package main
+package Text
 
 import (
+	"fmt"
 	"io/ioutil"
 	"os"
 
@@ -8,9 +9,18 @@ import (
 	"golang.org/x/image/font/gofont/goregular"
 )
 
-func getText() {
+func MakePic() {
 	const W = 500
 	const H = 300
+
+	// Declare the variable that takes the txt and makes a picture
+	var txt string
+
+	//Prompt user to enter image URL
+	fmt.Println("Enter the .txt filename: ")
+
+	// Taking input from user
+	fmt.Scanln(&txt)
 
 	// Create a temporary file and write the byte slice to it
 	tempFile, err := ioutil.TempFile("", "font-*.ttf")
@@ -33,8 +43,8 @@ func getText() {
 	dc.Clear()
 
 	dc.SetRGB(.5, 0, 0)
-	dc.DrawStringAnchored("Hello, world!", W/2, H/2, 0.5, 0.5)
+	dc.DrawStringAnchored(txt, W/2, H/2, 0.5, 0.5)
 	dc.Stroke()
 
-	dc.SavePNG("hello.png")
+	dc.SavePNG("modified" + txt)
 }

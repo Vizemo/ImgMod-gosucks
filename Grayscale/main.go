@@ -1,15 +1,15 @@
-package main
+package Grayscale
 
 import (
 	"fmt"
 	"image"
-
-	//"image/png" // import this package to decode PNGs
+	_ "image/jpeg"
+	_ "image/png"
 	"os"
 )
 
 func GrayScale() {
-	reader, err := os.Open("image.png")
+	reader, err := os.Open("downloadedImage.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
@@ -24,6 +24,14 @@ func GrayScale() {
 
 	bounds := img.Bounds()
 	width, height := bounds.Max.X, bounds.Max.Y
+
+	// create output file that stores the pixel colors
+	file, errs := os.Create("GrayscaleNums.txt")
+	if errs != nil {
+		fmt.Println("Could not create file", errs)
+		return
+	}
+	defer file.Close()
 
 	for y := 0; y < height; y++ {
 		for x := 0; x < width; x++ {
