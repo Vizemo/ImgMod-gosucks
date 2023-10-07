@@ -1,4 +1,4 @@
-package Text
+package main
 
 import (
 	"fmt"
@@ -9,18 +9,16 @@ import (
 	"golang.org/x/image/font/gofont/goregular"
 )
 
-func MakePic() {
+func main() {
 	const W = 500
 	const H = 300
 
-	// Declare the variable that takes the txt and makes a picture
-	var txt string
-
-	//Prompt user to enter image URL
-	fmt.Println("Enter the .txt filename: ")
-
-	// Taking input from user
-	fmt.Scanln(&txt)
+	reader, err := os.Open("downloadedImage.png")
+	if err != nil {
+		fmt.Printf("Error: %v\n", err)
+		return
+	}
+	defer reader.Close()
 
 	// Create a temporary file and write the byte slice to it
 	tempFile, err := ioutil.TempFile("", "font-*.ttf")
@@ -43,8 +41,8 @@ func MakePic() {
 	dc.Clear()
 
 	dc.SetRGB(.5, 0, 0)
-	dc.DrawStringAnchored(txt, W/2, H/2, 0.5, 0.5)
+	dc.DrawStringAnchored(reader.Name(), W/2, H/2, 0.5, 0.5)
 	dc.Stroke()
 
-	dc.SavePNG("modified" + txt)
+	dc.SavePNG("colLabel.png")
 }
