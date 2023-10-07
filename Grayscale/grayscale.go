@@ -1,4 +1,4 @@
-package Grayscale
+package grayscale
 
 import (
 	"fmt"
