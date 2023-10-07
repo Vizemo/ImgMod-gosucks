@@ -1,4 +1,4 @@
-package grayscale
+package Grayscale
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func grayscale() {
+func Grayscale() {
 	// Open the original image
 	reader, err := os.Open("downloadedImage.png")
 	if err != nil {
